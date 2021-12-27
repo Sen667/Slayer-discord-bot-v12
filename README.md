@@ -5,12 +5,14 @@
   <p align="center">
     Un bot discord simple d'utilisation
     <br />
- 
+
 # 🔥 Slayer-discord-bot-v12
+
 👋 Hey je vous partage mon bot discord 
  
  ✨ Version Discordjs v12
- 
+  
+![64e3807c0d2af02578a9d83bacf482d0](https://user-images.githubusercontent.com/81926645/147494025-88476753-20b1-4dfb-b8f7-a1de09b37c89.jpg)
  # 🍉 Installation
 
 Ce bot est écrit pour fonctionner avec node.js. Allez voir : https://nodejs.org/en/download/
