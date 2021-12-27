@@ -1,0 +1,14 @@
+{
+    "token": "Your Bot token !",
+    "owner": ["Your ID"],
+    "prefix": "+",
+    "version": "Discord Slayer V0.2",
+    "color": "#14ffeb",
+    "bot": { 
+        "owner": "Your ID" ,
+        "dev": [
+            "<@852593913033523202>" 
+          
+        ]
+    }
+}
