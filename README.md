@@ -1,3 +1,11 @@
+<br />
+<p align="center">
+  <h3 align="center">Slayer</h3>
+
+  <p align="center">
+    Un bot discord simple d'utilisation
+    <br />
+ 
 # 🔥 Slayer-discord-bot-v12
 👋 Hey je vous partage mon bot discord 
  
