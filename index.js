@@ -74,7 +74,7 @@ client.on('message', message =>{
     if(message.content.startsWith(`${PREFIX}prefix`)) {
       if(!message.member.hasPermission('MANAGE_GUILD'))return message.channel.send("Tu n'as pas les permission")
       if(!args[1])return message.channel.send("Precise un prefix !")
-      if(args[1].length > 3)return message.channel.send("Le prefix est de maximum 3 characters")
+      if(args[1].length > 4)return message.channel.send("Le prefix est de maximum 4 characters")
       if(args[1] === db.get(`guild_${message.guild.id}_prefix`))return message.channel.send("C'est deja le prefix actuel")
       if(args[1] === "?") db.delete(`guild_${message.guild.id}_prefix`)
       db.set(`guild_${message.guild.id}_prefix`,args [1])
@@ -86,12 +86,12 @@ client.on('message', message =>{
 //ANTILINK
 client.on("message", async message => {
     if (db.has(`antilink-${message.guild.id}`) === false) return;
-    if (message.content.includes("discord.gg/") || message.content.includes("discordapp/invites") || message.content.includes(".gg/") || message.content.includes("discord.io"))
+    if (message.content.includes("discord.gg/") || message.content.includes("discordapp/invites") || message.content.includes(".gg/") || message.content.includes("discord.io") || message.content.includes("https://"))
         if (message.member.hasPermission("ADMINISTRATOR")) {
             return
         } else {
             message.delete()
-            message.reply("Tu n'as pas la permission d'envoyer un lien discord")
+            message.reply("Vous n'avez pas la permission d'envoyer des liens !")
         }
         
 })
@@ -100,7 +100,7 @@ client.on("message", async message => {
 
 //ANTISPAM
 const usersMap = new Map();
-const LIMIT = 5;
+const LIMIT = 4;
 const TIME = 7000;
 const DIFF = 3000;
 
